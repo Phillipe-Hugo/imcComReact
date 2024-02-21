@@ -1,8 +1,7 @@
 .App {
-  /* Adicione outras propriedades de estilização conforme necessário */
   background-image: url('./image/images/imcapp.jpg');
-  background-size: cover; /* Isso garante que a imagem cubra toda a área da div */
-  height: 100vh; /* Isso faz com que a div ocupe toda a altura da viewport */
+  background-size: cover;
+  height: 100vh; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,8 +17,8 @@
   bottom: 0;
   background-image: url('./image/images/imcapp.jpg');
   background-size: cover;
-  opacity: 0.5; /* Ajuste a opacidade conforme necessário */
-  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo da div */
+  opacity: 0.5;
+  z-index: -1; 
 }
 
 .App-logo {
@@ -56,9 +55,6 @@
     transform: rotate(360deg);
   }
 }
-
-
-/*Estilizando demais componentes*/
 
 label {
   color: rgb(27, 26, 26);
