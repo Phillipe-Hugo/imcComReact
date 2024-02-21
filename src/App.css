@@ -1,5 +1,25 @@
 .App {
-  text-align: center;
+  /* Adicione outras propriedades de estilização conforme necessário */
+  background-image: url('./image/images/imcapp.jpg');
+  background-size: cover; /* Isso garante que a imagem cubra toda a área da div */
+  height: 100vh; /* Isso faz com que a div ocupe toda a altura da viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.App::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./image/images/imcapp.jpg');
+  background-size: cover;
+  opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo da div */
 }
 
 .App-logo {
@@ -21,7 +41,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(34, 31, 31);
 }
 
 .App-link {
@@ -36,3 +56,35 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*Estilizando demais componentes*/
+
+label {
+  color: rgb(27, 26, 26);
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: rgb(47, 49, 47);
+  padding: 10px 20px;
+  cursor: pointer;
+  padding: 8px;
+  margin-bottom: 10px;
+  margin-left: 65px;
+}
+
+h1, h2 {
+  color: rgb(39, 37, 37);
+}
+
+.segundoinput {
+  padding: 8px;
+  margin-bottom: 10px;
+  margin-left: 12px;
+}   
